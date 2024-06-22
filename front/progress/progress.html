@@ -1,0 +1,99 @@
+<!-- 문제 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/front/progress/progress.css">
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/front/progress/progress.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+</head>
+
+<body>
+    <div class="card-group">
+        <div class="leftCardBody">
+
+            <div class="leftTopCard">
+                <!-- 기말고사 글은 선택할 수 있도록 -->
+                <h5 class="cardTitle">기말고사</h5>
+                <!-- 디데이 생성 -->
+                <p class="dDay">d-day</p>
+                <!-- 내 아이디 자동생성 -->
+                <p class="cheerUpMent"><small class="text-body-secondary">${코코아버터}님 오늘도 화이팅하세요</small></p>
+            </div>
+            <div class="cateGory">
+                <article class="cateGory1" id="homeButton">
+                    <img src="/front/image/cocohome.png" class="homeIcon" alt="homeIcon">
+                    홈
+                </article>
+                <script>function goToHome() { '홈페이지로 가는 코드' }</script>
+
+                <article class="cateGory2" id="graphButton">
+                    <img src="/front/image/cocograph.png" class="progressIcon" alt="progressIcon">
+                    학습률
+                </article>
+                <!-- 클릭시 하단메뉴 나오기  -->
+                <article class="cateGory3" id="progressButton">
+                    <img src="/front/image/progress.png" class="cocograph" alt="cocograph">
+                    학습페이지
+                </article>
+
+                <article class="cateGory4" id="settingButton">
+                    <img src="/front/image/cocosetting.png" class="cocoSettingIcon" alt="cocoSettingIcon">
+                    설정
+                </article>
+            </div>
+        </div>
+        <!-- `학습률`
+        정답률
+        오답률
+        문제유형에 따라 상위 몇 프로
+        등등 -->
+        <div class="rightCardBody">
+            <div>
+                <article class="print">
+                    <img src="/front/image/print.png" class="printIcon" alt="printIcon">
+                    인쇄하기
+                </article>
+            </div>
+
+
+            <div class="aaaa">
+                <div class="cards">
+                    <img src="/front/image/star.png" class="star" alt="star">
+                    <div class="card-body">
+
+                        <!-- <h5 class="card-title">문제분석</h5> -->
+                        <h5 class="alert alert-success" role="alert">
+
+                            <details id="todayDetails">
+                                <!-- //기본설정이 오늘의문제, 아래 화살표 누르면 퀴즈로 연동되게 -->
+                                <summary id="learning">오늘의 문제</summary>
+                                <p id="quiz">오늘의 퀴즈</p>
+                            </details>
+                        </h5>
+
+                        <p class="todayLearning" id="todayLearning">오늘의 문제 누르면 오늘의 문제, 오늘의 퀴즈를 누르면 오늘의 퀴즈 나올거고, 답변 입력하고
+                            맞는지 확인버튼 넣을 예정
+                            문제앞에 체크박스 처럼 좋아요 표시 할 수 있게 할거고, 연령이나 과목은 홈에 기본 저장되어있는대로 연동될듯. gpt는 사용자가 찾기 쉽게 앞에다 구현했으나, 여기도
+                            넣을까 고민중
+                        </p>
+                        <p class="todayQuiz" id="todayQuiz">{{quizContent| safe}}</p>
+                        <!-- <p class="card-text">정답률 반환?</p>
+                        <p class="card-text">1:1</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/front/progress/progress.js"></script>
+</body>
+
+</html>
