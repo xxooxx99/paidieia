@@ -1,0 +1,117 @@
+:root {
+  --bg-form-color: #80cbc4;
+}
+.topLeftcard {
+  background-color: bisque;
+}
+.leftCardBody .leftTopCard {
+  background-color: white;
+  padding: 10px;
+  margin: 40px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.leftCardBody {
+  background-color: var(--bg-form-color);
+  width: 30%;
+}
+.print,
+.star {
+  cursor: pointer;
+}
+.cateGory {
+  width: 94%;
+  margin: 0px auto 0px auto;
+}
+.cateGory1,
+.cateGory2,
+.cateGory4 {
+  background-color: var(--bg-form-color);
+  color: white;
+
+  cursor: pointer;
+}
+.cateGory1:hover,
+.cateGory2:hover,
+.cateGory4:hover {
+  color: var(--bg-form-color);
+  background-color: white;
+  cursor: pointer;
+}
+
+.cateGory3 {
+  background-color: var(--bg-form-color);
+  color: white;
+  cursor: pointer;
+}
+
+.cateGory3:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+  cursor: pointer;
+}
+
+.cateGory1 .homeIcon {
+  /* background-image: url("cocohome.png"); */
+  width: 20px;
+}
+.cateGory2 .progressIcon {
+  /* background-image: url("progress.png"); */
+  width: 20px;
+}
+.cateGory3 .cocograph {
+  /* background-image: url("cocograph.png"); */
+  width: 20px;
+}
+.cateGory4 .cocoSettingIcon {
+  /* background-image: url("cocosetting.png"); */
+  width: 25px;
+}
+.rightTitle {
+  width: 65%;
+}
+.rightCardBody {
+  width: 70%;
+  padding: 20px;
+
+  background-color: #eff3f2;
+  height: 750px;
+}
+.rightCardBody .print {
+  width: 200px;
+  margin-left: 80%;
+  background-color: white;
+  color: var(--bg-form-color);
+}
+
+/* .cardss {
+  background-color: rgb(255, 255, 255);
+  width: 200%;
+  height: 600px;
+  border-radius: 10px;
+} */
+
+.cards .star {
+  margin-top: 10px;
+  margin-left: 92.5%;
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.cards .starButton:hover {
+  margin-left: 55%;
+  /* background-image: url(starOutline.png); */
+}
+.aaaa {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+}
+h5.alert.alert-success {
+  width: 80%;
+  margin-right: 10%;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
