@@ -54,19 +54,15 @@
 }
 
 .cateGory1 .homeIcon {
-  /* background-image: url("cocohome.png"); */
   width: 20px;
 }
 .cateGory2 .cocograph {
-  /* background-image: url("progress.png"); */
   width: 20px;
 }
 .cateGory3 .progressIcon {
-  /* background-image: url("cocograph.png"); */
   width: 20px;
 }
 .cateGory4 .cocoSettingIcon {
-  /* background-image: url("cocosetting.png"); */
   width: 25px;
 }
 
