@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/front/set/setting.css">
+    <link rel="stylesheet" href="/front/paideia/paideiacss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/front/paideia/paideia.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        .content-section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .leftContent, .rightContent {
+            padding: 10px;
+        }
+
+        .leftContent {
+            flex: 1;
+        }
+
+        .rightContent {
+            flex: 2;
+        }
+
+        .fullWidth {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-group">
+        <div class="leftCardBody">
+            <div class="leftTopCard">
+                <h5 class="cardTitle">기말고사</h5>
+                <p class="dDay">d-day</p>
+                <p class="cheerUpMent"><small class="text-body-secondary">${코코아버터}님 오늘도 화이팅하세요</small></p>
+            </div>
+            <div class="cateGory">
+                <article class="cateGory1" id="homeButton">
+                    <img src="/front/image/cocohome.png" class="homeIcon" alt="homeIcon">
+                    홈
+                </article>
+
+                <article class="cateGory2" id="graphButton">
+                    <img src="/front/image/cocograph.png" class="cocograph" alt="cocograph">
+                    학습률
+                </article>
+
+                <article class="cateGory3" id="progressButton">
+                    <img src="/front/image/progress.png" class="progressIcon" alt="progressIcon">
+                    학습페이지
+                </article>
+
+                <article class="cateGory4" id="settingButton">
+                    <img src="/front/image/cocosetting.png" class="cocoSettingIcon" alt="cocoSettingIcon">
+                    설정
+                </article>
+            </div>
+        </div>
+        <div class="rightCardBody">
+            <div class="d-flex flex-column flex-md-row">
+                <div class="leftContent">
+                    <div class="cards">
+                        <div id="studentContent" class="content-section">
+                            <h5 class="firstTitle">학생 버전 콘텐츠</h5>
+                            <div class="dropdown mb-2">
+                                <button id="gradeCategory" class="btn btn-secondary dropdown-toggle fullWidth" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    학년 선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">초등학생</a></li>
+                                    <li><a class="dropdown-item" href="#">중학생</a></li>
+                                    <li><a class="dropdown-item" href="#">고등학생</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown mb-2">
+                                <button id="subjectCategory" class="btn btn-secondary dropdown-toggle fullWidth" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    과목선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">국어</a></li>
+                                    <li><a class="dropdown-item" href="#">수학</a></li>
+                                    <li><a class="dropdown-item" href="#">영어</a></li>
+                                    <li><a class="dropdown-item" href="#">기타</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col mb-2">
+                                    <div class="dropdown">
+                                        <button id="requestType" class="btn btn-secondary dropdown-toggle fullWidth" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            질문 유형
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">학습자료 요청</a></li>
+                                            <li><a class="dropdown-item" href="#">학습퀴즈 요청</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="dropdown">
+                                        <button id="languageSetting" class="btn btn-secondary dropdown-toggle fullWidth" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            언어 유형
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">한국어</a></li>
+                                            <li><a class="dropdown-item" href="#">영어</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards mt-3">
+                                <h5 class="questionTitle">질문하기</h5>
+                                <form id="questionForm">
+                                    <textarea id="questionInput" class="questionInput" placeholder="질문을 입력하세요..."></textarea>
+                                    <button class="questionBtn">질문하기</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="adultContent" class="content-section">
+                            <h5 class="firstTitle">성인 버전 콘텐츠</h5>
+                            <div class="underFirstTitle">
+                                <input class="searchContentBox" type="text" id="courseSearch" placeholder="과목 검색...">
+                                <button class="contentSearchBtn" onclick="searchCourses()">검색</button>
+                            </div>
+                        </div>
+                        <div id="defaultContent" class="content-section">
+                            <h5>학생인지 선택해주세요</h5>
+                            <p>여기에 기본 콘텐츠를 추가하세요.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightContent">
+                    <div class="cards">
+                        <div class="cards">
+                            <div class="card-body" style="height: 500px;"> <!-- 높이를 원하는 크기로 조정 -->
+                                <h5 class="card-title">답변</h5>
+                                <div class="answerArea" id="answerArea" style="height: 400px; overflow-y: auto;"> <!-- 높이를 원하는 크기로 조정 -->
+                                    <!-- 여기에 답변이 동적으로 추가될 예정 -->
+                                </div>
+                                <button class="answerAreaBtn">학습페이지로 가져가기</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const ageCategory = urlParams.get("ageCategory");
+            showContent(ageCategory);
+        });
+
+        function showContent(ageCategory) {
+            const studentContent = document.getElementById("studentContent");
+            const adultContent = document.getElementById("adultContent");
+            const defaultContent = document.getElementById("defaultContent");
+
+            studentContent.style.display = "none";
+            adultContent.style.display = "none";
+            defaultContent.style.display = "none";
+
+            if (ageCategory === "student") {
+                studentContent.style.display = "block";
+            } else if (ageCategory === "adult") {
+                adultContent.style.display = "block";
+            } else {
+                defaultContent.style.display = "block";
+            }
+        }
+        
+        function saveToLocalStorage(response) {
+            localStorage.setItem('gptResponse', response);
+
+            // 나중에 DB로 저장하는 방법 (주석처리)
+            // fetch('/api/saveToDB', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({ response: response })
+            // });
+        }
+
+        document.querySelector('.answerAreaBtn').addEventListener('click', () => {
+            const response = document.getElementById('answerArea').innerText;
+            saveToLocalStorage(response);
+            window.location.href = '/front/progress/progress.html';
+        });
+    </script>
+</body>
+</html>

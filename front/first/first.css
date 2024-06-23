@@ -1,0 +1,43 @@
+/* 첫화면 */
+:root {
+  --bg-form-color: #80cbc4;
+}
+
+.backGroundCard {
+  margin: 10px auto 10px auto;
+  width: 95%;
+  height: 800px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.mainIcon {
+  width: 100px;
+  float: right;
+}
+.imageCard {
+  background-color: var(--bg-form-color);
+  padding: 10px;
+
+  width: 100%;
+
+  border-radius: 5px;
+  text-align: center;
+  align-content: center;
+}
+.userIcon {
+  height: 380px;
+
+  margin-bottom: 40px;
+  /* margin: 50px 78% 50px 22%; */
+}
+.firstCardBody {
+  background-color: white;
+
+  height: 160px;
+  text-align: center;
+  align-items: center;
+}
+.studentIcon,
+.adultIcon {
+  width: 90px;
+}

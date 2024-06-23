@@ -1,0 +1,111 @@
+:root {
+  --bg-form-color: #80cbc4;
+}
+.topLeftcard {
+  background-color: bisque;
+}
+.leftCardBody .leftTopCard {
+  background-color: white;
+  padding: 10px;
+  margin: 40px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.leftCardBody {
+  background-color: var(--bg-form-color);
+  width: 30%;
+}
+.cateGory {
+  width: 94%;
+  margin: 0px auto 0px auto;
+  cursor: pointer;
+}
+.cateGory1 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory1:hover {
+  color: var(--bg-form-color);
+  background-color: white;
+}
+
+.cateGory2 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory3 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory4 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory2:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+.cateGory3:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+.cateGory4:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+
+.cateGory1 .homeIcon {
+  /* background-image: url("cocohome.png"); */
+  width: 20px;
+}
+.cateGory2 .cocograph {
+  /* background-image: url("progress.png"); */
+  width: 20px;
+}
+.cateGory3 .progressIcon {
+  /* background-image: url("cocograph.png"); */
+  width: 20px;
+}
+.cateGory4 .cocoSettingIcon {
+  /* background-image: url("cocosetting.png"); */
+  width: 25px;
+}
+
+.rightCardBody {
+  width: 70%;
+  padding: 20px;
+
+  background-color: #eff3f2;
+  height: 750px;
+}
+.rightCardBody .print {
+  width: 200px;
+  margin-left: 80%;
+  background-color: white;
+  color: var(--bg-form-color);
+}
+
+.cards {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.cards .star {
+  margin-top: 10px;
+  margin-left: 92.5%;
+  width: 60px;
+}
+.cards .starButton:hover {
+  margin-left: 55%;
+  /* background-image: url(starOutline.png); */
+}
+.alert.alert-success {
+  border-radius: 50px;
+}
+/* 카드 각 타이틀 */
+.card-title {
+  color: var(--bg-form-color);
+  font-weight: bold;
+}

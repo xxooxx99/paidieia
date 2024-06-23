@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/front/first/first.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/front/first/first.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+</head>
+<body>
+    <div class="backGroundCard">
+        <div class="imageCard">
+            <div>
+                <h5 class="mainIcon"><img src="/front/image/paidiea.png" class="mainIcon" alt="mainIcon"></h5>
+            </div>
+            <div class="imageCard">
+                <h5 class="card-title"><img src="/front/image/firstImage.png" class="userIcon" alt="userIcon"></h5>
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="firstCardBody">
+                                <h5 class="card-title"></h5>
+                                <a href="#" class="btn btn-white" id="studentBtn">
+                                    <h5 class="card-title"><img src="/front/image/studentIcon.png" class="studentIcon" alt="studentIcon">Student</h5>학생
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="firstCardBody">
+                                <h5 class="card-title"></h5>
+                                <a href="#" class="btn btn-white" id="adultBtn">
+                                    <h5 class="card-title"><img src="/front/image/adultIcon.png" class="adultIcon" alt="adultIcon">Adult</h5>성인
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
