@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="/paidieia/front/set/setting.css">
-<!-- 현재 작동가능 -->
+<!-- 현재 작동가능 :)저장포인트 -->
 
 <head>
 
@@ -62,27 +62,21 @@
         <!-- 유저 : 유저번호, 이름, 나이, 성별, 목표(대학, 자격증등)
             디데이 -->
         <div class="rightCardBody">
-            <div>
+            <div class="print-container">
                 <article class="print">
                     <img src="/paidieia/front/image/print.png" class="printIcon" alt="printIcon">
                     인쇄하기
                 </article>
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4">
-
                 <div class="col">
                     <div class="cards">
-                        <!-- <> -->
                         <div id="studentContent" class="content-section active">
-                            <h5 class="studentTitle">학생 버전 콘텐츠</h5>
-                            <div class="dropdown-center">
+                            <h5 class="firstTitle">학생 버전 콘텐츠</h5>
+                            <div class="underFirstTitle">
                                 <button class="btn btn-secondary dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     학년 선택
-                                </button>
-                                <button class="btn btn-secondary dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    과목선택
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">초등학생</a></li>
@@ -90,90 +84,80 @@
                                     <li><a class="dropdown-item" href="#">고등학생</a></li>
                                 </ul>
                             </div>
+                            <div>
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    과목선택
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">국어</a></li>
+                                    <li><a class="dropdown-item" href="#">수학</a></li>
+                                    <li><a class="dropdown-item" href="#">영어</a></li>
+                                    <li><a class="dropdown-item" href="#">기타</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div id="adultContent" class="content-section">
-                            <h5 class="contentTitle">성인 버전 콘텐츠</h5>
-                            <div class="adultSearchContainer">
-                                <input class="search" type="text" id="courseSearch" placeholder="과목 검색...">
-                                <button class="searchBtn" onclick="searchCourses()">검색</button>
+                            <h5 class="firstTitle">성인 버전 콘텐츠</h5>
+                            <div class="underFirstTitle">
+                                <input class="searchContentBox" type="text" id="courseSearch" placeholder="과목 검색...">
+                                <button class="contentSearchBtn" onclick="searchCourses()">검색</button>
                             </div>
                         </div>
                         <div id="defaultContent" class="content-section">
                             <h5>학생인지 선택해주세요</h5>
                             <p>여기에 기본 콘텐츠를 추가하세요.</p>
                         </div>
-
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="cards">
-                        <!-- <img class="starButton" src="/front/image/star.png" alt="즐겨찾기"> -->
-                        <div class="content">
-
-                            <h5 class="contentTitle1">나의 노력</h5>
-
+                        <h5 class="contentTitle1">나의 노력</h5>
+                        <div class="myEffortsContent">
                             <p class="card-text">과목당 : 설정-내정보-목표 이루면 칭찬메세지/못이루면 : 응원메세지 ; @개만 더 풀면되요 등 멘트</p>
-                            <p class="card-text">선택한 과목 당 정해주고, 1개 설정시 과목 목표 과목추가=> 설정-내정보-목표 가도록</p>
-
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="cards">
-
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                질문하기
-                            </h5>
-                            <form id="questionForm">
-                                <div>
-                                    <!-- <label for="questionInput" class="form-label">질문 입력</label> -->
-                                    <input type="text" class="form-control" id="questionInput"
-                                        placeholder="질문을 입력하세요...">
-                                </div>
-                                <button type="submit" class="btn btn-primary">질문하기</button>
-                            </form>
-                        </div>
+                        <h5 class="questionTitle">질문하기</h5>
+                        <form id="questionForm">
+                            <textarea id="questionInput" class="questionInput" placeholder="질문을 입력하세요..."></textarea>
+                            <button class="questionBtn">질문하기</button>
+                        </form>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="cards">
                         <div class="card-body">
                             <h5 class="card-title">답변</h5>
                             <div class="answerArea" id="answerArea">
                                 <!-- 여기에 답변이 동적으로 추가될 예정 -->
-                                s
-                            </div><button class="answerAreaBtn">확인</button>
+                            </div>
+                            <button class="answerAreaBtn">확인</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col">
-                    <div class="cards">
-                        <!-- <img class="starButton" src="/front/image/star.png" alt="즐겨찾기" onclick=""> -->
-                        <div class="card-body">
-                            <h5 class="card-title">문제추천</h5>
-                            <p class="card-text">전날 검색한</p>
-                            <p class="card-text">키워드 위주로</p>
-                            <p class="card-text">띄워주면?</p>
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
 
 
     </div>
     </article>
     </div>
+
+
     <script> document.getElementById('homeButton').addEventListener('click', function () {
             document.getElementById('studentContent').classList.add('active');
             document.getElementById('defaultContent').classList.remove('active');
         });
     </script>
 </body>
+<!-- 저장포인트 -->
 
 </html>

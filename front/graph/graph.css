@@ -104,3 +104,8 @@
 .alert.alert-success {
   border-radius: 50px;
 }
+/* 카드 각 타이틀 */
+.card-title {
+  color: var(--bg-form-color);
+  font-weight: bold;
+}
