@@ -86,7 +86,8 @@
   color: var(--bg-form-color);
 }
 .studentTitle {
-  width: 100px;
+  width: 200px;
+  padding: 20px;
 }
 /* 네모박스 */
 .content {
@@ -115,18 +116,22 @@
 .contentTitle1 {
   padding: 30px;
 }
-/* .adultSearchContainer {
-  margin: 20px auto 0px auto;
-} */
-.search {
-  border: none;
-  width: 380px;
-  /* !important; */
+.card-body {
+  text-align: center;
 }
-.searchBtn {
+
+.answerArea {
+  border: #80cbc4;
+  border-radius: 5px;
+  height: 150px;
+  margin: 5px;
+  text-align: left;
+}
+.answerAreaBtn {
+  height: 40px;
+  width: 80px;
   background-color: var(--bg-form-color);
-  border: none;
-}
-.box {
-  margin: 30px;
+  align-items: center;
+  justify-content: first baseline;
+  border: #80cbc4;
 }

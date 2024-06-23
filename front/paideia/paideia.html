@@ -125,13 +125,30 @@
                             <h5 class="card-title">
                                 질문하기
                             </h5>
-                            <p class="card-text">gtp에게 물어보기
-                            </p>
-                            <p>답변 예상
-                            </p>
+                            <form id="questionForm">
+                                <div>
+                                    <!-- <label for="questionInput" class="form-label">질문 입력</label> -->
+                                    <input type="text" class="form-control" id="questionInput"
+                                        placeholder="질문을 입력하세요...">
+                                </div>
+                                <button type="submit" class="btn btn-primary">질문하기</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="cards">
+                        <div class="card-body">
+                            <h5 class="card-title">답변</h5>
+                            <div class="answerArea" id="answerArea">
+                                <!-- 여기에 답변이 동적으로 추가될 예정 -->
+                                s
+                            </div><button class="answerAreaBtn">확인</button>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="col">
                     <div class="cards">
                         <!-- <img class="starButton" src="/front/image/star.png" alt="즐겨찾기" onclick=""> -->
