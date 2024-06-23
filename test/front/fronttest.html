@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT 및 프린트 연동 테스트</title>
+</head>
+<body>
+    <h1>GPT 및 프린트 연동 테스트 페이지</h1>
+
+    <form id="gpt-form" onsubmit="handleSubmit(event)">
+        <div>
+            <label for="age-category">연령대:</label>
+            <select id="age-category">
+                <option value="student">학생</option>
+                <option value="adult">성인</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="subject-category">과목:</label>
+            <select id="subject-category">
+                <option value="math">수학</option>
+                <option value="english">영어</option>
+                <option value="science">과학</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="attachment-check">첨부 자료 확인:</label>
+            <input type="checkbox" id="attachment-check">
+        </div>
+
+        <div>
+            <label for="user-prompt">요청 자료 입력:</label>
+            <textarea id="user-prompt" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <label for="request-type">요청 유형:</label>
+            <select id="request-type">
+                <option value="learning-material">학습 자료 요청</option>
+                <option value="quiz">학습 퀴즈 요청</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="language-setting">언어 설정:</label>
+            <select id="language-setting">
+                <option value="english">영어</option>
+                <option value="korean">한국어</option>
+            </select>
+        </div>
+
+        <input type="submit" id="submit-btn" value="제출">
+        <input type="button" id="save-btn" value="저장하기" onClick="handleSave(event)">
+        <input type="button" id="end-session-btn" value="학습 종료" onClick="endSession()">
+        <input type="button" id="print-btn" value="학습 데이터 출력하기" onClick="confirmPrint()">
+    </form>
+
+    <div id="response-container"></div>  <!-- GPT 응답을 표시할 영역 추가 -->
+
+    <script src="script.js"></script>
+</body>
+</html>
