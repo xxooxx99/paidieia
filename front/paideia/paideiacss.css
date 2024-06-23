@@ -1,0 +1,137 @@
+:root {
+  --bg-form-color: #80cbc4;
+}
+
+/* 왼쪽상단 기말고사부분 */
+.leftCardBody .leftTopCard {
+  background-color: white;
+  padding: 10px;
+  margin: 40px 20px 20px 20px;
+  border-radius: 10px;
+}
+/* 왼쪽 박스 전체 */
+.leftCardBody {
+  background-color: var(--bg-form-color);
+  width: 30%;
+}
+/* 카테고리 틀 */
+.cateGory {
+  width: 94%;
+  margin: 0px auto 0px auto;
+}
+/* 홈버튼 */
+.cateGory1 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory1:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+/* 학습률 */
+.cateGory2 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+/* 학습페이지 */
+.cateGory3 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+/* 설정 */
+.cateGory4 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory2:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+.cateGory3:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+.cateGory4:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+
+.cateGory1 .homeIcon {
+  /* background-image: url("cocohome.png"); */
+  width: 20px;
+}
+.cateGory2 .progressIcon {
+  /* background-image: url("progress.png"); */
+  width: 20px;
+}
+.cateGory3 .cocograph {
+  /* background-image: url("cocograph.png"); */
+  width: 20px;
+}
+.cateGory4 .cocoSettingIcon {
+  background-image: url("/front/image/hoverSetting.png");
+  width: 25px;
+}
+
+.rightCardBody {
+  width: 70%;
+  padding: 20px;
+  background-color: #eff3f2;
+  height: 750px;
+}
+.rightCardBody .print {
+  width: 200px;
+  margin-left: 80%;
+  background-color: white;
+  color: var(--bg-form-color);
+}
+.studentTitle {
+  width: 200px;
+  padding: 20px;
+}
+/* 네모박스 */
+.content {
+  background-color: white;
+  margin: 10px;
+  width: 95%;
+  height: 260px;
+  border-radius: 10px;
+}
+/* 학생버전.성인버전 과목 제목 */
+.title {
+  margin: 20px;
+  width: 200px;
+}
+
+.content-section,
+.dropdown-center {
+  width: 160px;
+}
+/* 학년선택 박스 */
+.btn.btn-secondary {
+  background-color: var(--bg-form-color);
+  border: none;
+}
+
+.contentTitle1 {
+  padding: 30px;
+}
+.card-body {
+  text-align: center;
+}
+
+.answerArea {
+  border: #80cbc4;
+  border-radius: 5px;
+  height: 150px;
+  margin: 5px;
+  text-align: left;
+}
+.answerAreaBtn {
+  height: 40px;
+  width: 80px;
+  background-color: var(--bg-form-color);
+  align-items: center;
+  justify-content: first baseline;
+  border: #80cbc4;
+}
