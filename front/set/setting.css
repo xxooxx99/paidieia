@@ -1,0 +1,151 @@
+:root {
+  --bg-form-color: #80cbc4;
+}
+.topLeftcard {
+  background-color: bisque;
+}
+.leftCardBody .leftTopCard {
+  background-color: white;
+  padding: 10px;
+  margin: 40px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.leftCardBody {
+  background-color: var(--bg-form-color);
+  width: 30%;
+}
+.cateGory {
+  width: 94%;
+  margin: 0px auto 0px auto;
+}
+.cateGory1 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory1:hover {
+  color: var(--bg-form-color);
+  background-color: white;
+}
+
+.cateGory2 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory3 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory4 {
+  background-color: var(--bg-form-color);
+  color: white;
+}
+.cateGory2:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+.cateGory3:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+.cateGory4:hover {
+  background-color: white;
+  color: var(--bg-form-color);
+}
+
+.cateGory1 .homeIcon {
+  width: 20px;
+}
+.cateGory2 .cocograph {
+  width: 20px;
+}
+.cateGory3 .progressIcon {
+  width: 20px;
+}
+.cateGory4 .cocoSettingIcon {
+  width: 25px;
+}
+
+.rightCardBody {
+  width: 70%;
+  padding: 20px;
+
+  background-color: #eff3f2;
+  height: 750px;
+}
+.rightCardBody .print {
+  width: 200px;
+  margin-left: 80%;
+  background-color: white;
+  color: var(--bg-form-color);
+}
+/* 추가 */
+.card-title .infoBtn {
+  width: 150px;
+  margin-left: 43%;
+  /* margin-left: 150px; */
+  background-color: var(--bg-form-color);
+  border: none;
+}
+.cards {
+  position: relative;
+  background-color: white;
+  width: 95%;
+  height: 260px;
+  border-radius: 10px;
+}
+
+.cards .starButton {
+  position: absolute;
+  top: 10px; /* 원하는 위치로 조정 */
+  right: 10px; /* 원하는 위치로 조정 */
+}
+/* 추가 */
+.dday-add-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* 요소들 사이의 간격을 5px로 설정 */
+  align-items: flex-start;
+}
+.dDayBtn {
+  background-color: var(--bg-form-color);
+  border: none;
+  height: 50px;
+}
+/* .dDayAddBox {
+}
+.dDayDateBox {
+} */
+
+.dDayBtn {
+  white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+  padding: 5px 10px; /* 버튼 내부 여백 설정 */
+}
+.settingCard {
+  text-align: center;
+}
+.settingTitle {
+  /* margin: 20px; */
+  padding: 10px;
+}
+.textSize {
+  text-align: left;
+  margin-left: 20px;
+}
+.textSizeBtn {
+  background-color: var(--bg-form-color);
+  border-color: white;
+  height: 50px;
+}
+.reservationBtn {
+  background-color: var(--bg-form-color);
+  height: 50px;
+}
+
+.qNa {
+  margin: 10px;
+  height: 50px;
+  align-items: center;
+  background-color: var(--bg-form-color);
+  border-color: white;
+}
