@@ -22,7 +22,8 @@
                 <!-- 디데이 생성 -->
                 <p class="dDay">d-day</p>
                 <!-- 내 아이디 자동생성 -->
-                <p class="cheerUpMent"><small class="text-body-secondary">${코코아버터}님 오늘도 화이팅하세요</small></p>
+                <p class="cheerUpMent"><small class="text-body-secondary"><span id="userNameDisplay">코코아버터</span>님 오늘도
+                        화이팅하세요</small></p>
             </div>
             <div class="cateGory">
                 <article class="cateGory1" id="homeButton">
@@ -61,12 +62,30 @@
                     <div class="cards">
 
                         <div class="card-body">
-                            <h5 class="card-title">내 정보</h5>
+                            <!-- 수정 -->
+                            <h5 class="card-title">내 정보 <button type="submit" class="infoBtn">정보
+                                    저장</button></h5>
 
+                            <form id="userInfoForm">
+                                <input type="text" id="userName" placeholder="이름" class="form-control mb-2">
+                                <!-- <input type="text" id="userKeywords" placeholder="키워드 (쉼표로 구분)"
+                                    class="form-control mb-2"> -->
+                                <input type="text" id="userGoal" placeholder="목표" class="form-control mb-2">
+
+                            </form>
+                            <!--삭제-->
+                            <!-- <div id="userInfoDisplay" class="mt-3">
+                                <p class="card-text">이름: <span id="displayName"></span></p>
+                                <p class="card-text">키워드: <span id="displayKeywords"></span></p>
+                                <p class="card-text">목표: <span id="displayGoal"></span></p>
+                            </div> -->
+                            <!--수정-->
+                            <!--                             
                             <p class="card-text">이름</p>
                             <p class="card-text">문제추천설정: 키워드 적용</p>
                             <p class="card-text">목표: 하루에 문제풀이 @@개 풀기 등</p>
-                            <p class="card-text">목표추가</p>
+                            <p class="card-text">목표추가</p> -->
+                            <!--삭제-->
                         </div>
                     </div>
                 </div>
@@ -74,9 +93,17 @@
                     <div class="cards">
 
                         <div class="card-body">
-                            <h5 class="card-title">디데이</h5>
-                            <li class="card-text">메인디데이</li>
-                            <li class="card-text">디데이추가</li>
+                            <!-- 여기안에 추가 -->
+                            <div id="dDayList">
+                                <!-- 기존 디데이 목록이 여기에 표시됩니다 -->
+                                <p class="card-text">D-day<span id="mainDDay"></span></p>
+                            </div>
+                            <div class="dday-add-box">
+                                <input type="text" id="eventName" placeholder="디데이 이름" class="dDayAddBox">
+                                <input type="date" id="eventDate" class="dDayDateBox">
+                                <button id="addDDay" class="dDayBtn">디데이 추가</button>
+                            </div>
+                            <!-- 여기 위에 추가 -->
                         </div>
                     </div>
                 </div>
@@ -85,24 +112,43 @@
 
                         <div class="card-body">
                             <h5 class="card-title">인쇄예약모드
-
                             </h5>
+                            <!-- 수정 -->
+                            <form id="printReservationForm">
+                                <div class="mb-2">
 
-                            <p class="card-text">요일
-                            </p>
-                            <p>인쇄예약설정 시간 </p>
+                                    <select id="printDay" class="form-select">
+                                        <option value="monday">월요일</option>
+                                        <option value="tuesday">화요일</option>
+                                        <option value="wednesday">수요일</option>
+                                        <option value="thursday">목요일</option>
+                                        <option value="friday">금요일</option>
+                                        <option value="saturday">토요일</option>
+                                        <option value="sunday">일요일</option>
+                                    </select>
+                                </div>
+                                <div class="mb-2">
+
+                                    <input type="time" id="printTime" class="form-control">
+                                </div>
+                                <button type="submit" class="reservationBtn">예약 설정</button>
+                            </form>
+
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="cards">
 
-                        <div class="card-body">
-                            <h5 class="card-title">설정</h5>
-                            <p class="card-text">글씨크기</p>
-                            <p class="card-text">디데이추가</p>
+                        <div class="settingCard">
+                            <h5 class="settingTitle">설정</h5>
+                            <p class="textSize">글씨크기</p>
+                            <button id="increaseFontBtn" class="textSizeBtn">글씨 크게</button>
+                            <button id="decreaseFontBtn" class="textSizeBtn">글씨 작게</button>
+                            <div>
+                                <button class="qNa">1:1 문의</button>
+                            </div>
 
-                            <p class="card-text">1:1</p>
                         </div>
                     </div>
                 </div>

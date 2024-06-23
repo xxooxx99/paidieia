@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const userNameDisplay = document.getElementById("userNameDisplay");
+  const savedName = localStorage.getItem("userName");
+  if (savedName) {
+    userNameDisplay.textContent = savedName;
+  }
+
   const buttons = {
     homeButton: "/front/paideia/paideia.html",
     graphButton: "/front/graph/graph.html",
@@ -20,17 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const todayLearning = document.getElementById("todayLearning");
   const todayQuiz = document.getElementById("todayQuiz");
   const quizToggle = document.getElementById("quiz");
+  const answerRate = document.getElementById("answerRate");
 
   todayLearning.style.display = "block";
   todayQuiz.style.display = "none";
+  answerRate.style.display = "none";
 
   if (todayDetails) {
     todayDetails.addEventListener("toggle", () => {
       if (todayDetails.open) {
         todayLearning.style.display = "block";
+        todayQuiz.style.display = "none";
+        answerRate.style.display = "none";
       } else {
         todayLearning.style.display = "none";
-        todayQuiz.style.display = "none"; // 퀴즈 내용도 숨기기
+        todayQuiz.style.display = "none";
+        answerRate.style.display = "none";
       }
     });
   }
@@ -52,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     quizToggle.addEventListener("click", () => {
       todayLearning.style.display = "none";
       todayQuiz.style.display = "block";
+      answerRate.style.display = "block";
     });
   }
 });

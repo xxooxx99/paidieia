@@ -26,9 +26,9 @@
   flex-wrap: wrap;
   margin: -10px;
 }
-.col:nth-child(-n + 2) .cards {
-  height: 280px; /* 아래 카드들과 동일한 높이로 설정 */
-}
+/* .col:nth-child(-n + 2) .cards {
+  height: 280px; } */
+/* 아래 카드들과 동일한 높이로 설정 */
 
 /* 나의 노력과 학생 버전 콘텐츠 카드 내부 콘텐츠 스크롤 가능하도록 설정 */
 /* .col:nth-child(-n + 2) .cards > div {
@@ -43,12 +43,13 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  height: 600px;
 }
 
 /* 아래 카드들의 높이 명시적 설정 */
-.col:nth-child(n + 3) .cards {
+/* .col:nth-child(n + 3) .cards {
   height: 280px;
-}
+} */
 
 .firstTitle,
 .contentTitle1,
@@ -69,12 +70,16 @@
 .searchContentBox {
   width: 70%;
   margin-right: 10px;
+
+  align-items: end;
 }
 
 .contentSearchBtn {
   background-color: var(--bg-form-color);
   color: white;
+  margin-left: 350px;
   border: none;
+
   padding: 5px 10px;
 }
 
@@ -98,13 +103,14 @@
 
 .questionInput {
   margin-bottom: 10px;
-  height: 100px;
+  height: 230px;
+  text-align: center;
 }
 
 .answerArea {
   border: 1px solid var(--bg-form-color);
   border-radius: 5px;
-  height: 400px;
+  height: 450px;
   margin-bottom: 10px;
   padding: 10px;
   text-align: left;
@@ -120,7 +126,7 @@
 .card-body {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 100%;
 }
 
 .content-section {
